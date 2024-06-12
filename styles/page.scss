@@ -1,0 +1,49 @@
+/* app/page.module.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-container, .footer-container{
+  width: 100%;
+  text-align: center;
+}
+
+.blogList {
+  list-style: none;
+  padding: 0;
+}
+
+.blogList li {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.blogList li:hover {
+  transform: scale(1.02);
+}
+
+.blogLink {
+  text-decoration: none;
+  color: #0070f3;
+  font-size: 1.5em;
+}
+
+.blogDate {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.blog-page {
+  margin: 24px;
+  padding: 24px;
+}
