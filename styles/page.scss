@@ -1,4 +1,51 @@
 /* app/page.module.css */
+
+/* 设置背景渐变样式 */
+body {
+  /* 线性渐变，从左上角到右下角 */
+  background: linear-gradient(to bottom right, #5fd1ff, #fea17bb3);
+  /* 确保背景覆盖整个页面 */
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 页头样式 */
+header {
+  text-align: center;
+  padding: 2em;
+  color: white;
+}
+
+/* 主要内容区域样式 */
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题样式 */
+h1, h2, h3 {
+  margin: 0.5em 0;
+  color: #333;
+}
+
+/* 段落样式 */
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 页脚样式 */
+footer {
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -23,9 +70,13 @@
 .blogList li {
   margin: 20px 0;
   padding: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   border-radius: 8px;
   transition: transform 0.2s;
+  background: #b0dff54a;
+  .blogDate {
+    margin: 12px 0;
+  }
 }
 
 .blogList li:hover {
@@ -44,6 +95,7 @@
 }
 
 .blog-page {
-  margin: 24px;
+  // margin: 24px;
   padding: 24px;
+  background: #FFF8DC;
 }

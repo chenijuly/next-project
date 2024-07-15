@@ -3,11 +3,11 @@
  * @Author: jdchen
  * @Date: 2024-06-02 09:48:26
  * @LastEditors: jdchen
- * @LastEditTime: 2024-06-08 16:52:07
+ * @LastEditTime: 2024-07-02 17:25:09
  */
 import { getMarkdownContent } from '@/lib/blog';
 // import style from '../../globals.scss'
-// import './page.css'
+import '@/styles/page.scss';
 
 type Iparams = {
   params: { 
