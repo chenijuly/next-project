@@ -3,19 +3,23 @@ import Link from "next/link";
 // "use client";
 import withLayout from '@/app/components/withLayout';
 import { getSortedPostsData } from '../lib/posts';
+// import { useRouter } from 'next/navigation';
 const allPostsData = getSortedPostsData();
 const Home = () => {
+  // const router = useRouter()
+  // const jumpPage = (url: string) => {
+  //   router.push(url)
+  // }
   return (
     <div className="container">
       <ul className="blogList">
         {allPostsData.map(({ id, date, title }) => (
           <li key={id}>
             
-            <Link legacyBehavior href={`/blog/${id}`} className="blogLink">
+            <Link legacyBehavior={false} href={`/blog/${id}`} className="blogLink">
               {title}
             </Link>
-            <br />
-            <small>{date}</small>
+            <p className='blogDate'>{date}</p>
           </li>
         ))}
       </ul>

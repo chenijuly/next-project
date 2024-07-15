@@ -3,7 +3,7 @@
  * @Author: jdchen
  * @Date: 2024-06-11 09:48:22
  * @LastEditors: jdchen
- * @LastEditTime: 2024-06-12 15:24:28
+ * @LastEditTime: 2024-07-02 16:39:36
  */
 import React from 'react';
 import Header from './Header';
@@ -13,7 +13,7 @@ const withLayout = (WrappedComponent: any) => {
   const WithProps = (props: any) => (
     <div>
       <Header />
-      <main style={{margin: '20px'}}>
+      <main>
         <WrappedComponent {...props} />
       </main>
       <Footer />
